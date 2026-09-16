@@ -15,8 +15,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "My Simple Next.js App",
-  description: "A minimal Next.js app to learn architecture",
+  title: "My Portfolio",
+  description: "A modern, professional portfolio built with Next.js",
 };
 
 export default function RootLayout({
@@ -26,9 +26,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen flex flex-col`}>
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen flex flex-col bg-slate-50 text-slate-900`}>
         <Navbar />
-        <main className="flex-grow flex items-center justify-center p-8">
+        <main className="flex-grow flex flex-col items-center justify-center p-6 w-full max-w-5xl mx-auto">
           {children}
         </main>
         <Footer />
